@@ -1,11 +1,17 @@
-# Diamond Price Prediction
+# Product Price Prediction and Analytics Using Machine Learning
 
-> A regression machine learning project that estimates diamond prices using physical measurements and quality grades, supported by exploratory analysis and an interactive Streamlit prototype.
+> A feature based product pricing analytics and machine learning project. The first case study uses diamond characteristics to estimate prices through regression models and an interactive Streamlit prototype.
 
 **Status:** Model artifacts and application code are present. The deployment configuration and reported model performance require independent verification.  
 **Tools:** Python, pandas, NumPy, scikit-learn, XGBoost, LightGBM, CatBoost, Plotly and Streamlit.
 
-![Diamond Price Prediction Streamlit application](screenshots/app-interface.png)
+![Diamond pricing case study Streamlit application](screenshots/app-interface.png)
+
+## Project Scope and Positioning
+
+**Case Study 1: Diamond Price Prediction.** This repository currently models diamond prices only. The broader project title describes a transferable workflow for product price analysis, feature engineering and regression modelling. It does not mean that models for vehicles, electronics, property or other product categories have been trained or validated.
+
+Future product categories will require their own datasets, features, validation and model training before predictions can be offered.
 
 ## Executive Summary
 
@@ -13,11 +19,19 @@ Diamond prices vary substantially with carat weight, cut, colour, clarity and ph
 
 The application exposes diamond attributes as user inputs, constructs engineered features, calls a saved prediction model and attempts to reverse a target power transformation to display an estimated price. The present documentation distinguishes implementation from demonstrated performance, because the reported accuracy and deployment need to be reproduced using the included code and files.
 
+## Generalisable Analytical Framework
+
+The project follows a repeatable methodology: define a product pricing question, investigate relevant characteristics, clean and encode features, train regression models, validate errors, and serve estimates through an interface. Diamond data provides the first concrete demonstration of this framework.
+
 ## Business Problem and Objectives
 
 A diamond valuation analyst or retailer may need an initial data based estimate that accounts for both size and quality. This project investigates the relationship between diamond attributes and observed prices and prototypes an interactive estimate. It does not establish an independently validated market appraisal or a live pricing service.
 
 Objectives include analysing price drivers, managing categorical attributes and correlated dimensions, comparing regression models, measuring prediction errors and presenting the result through a user interface.
+
+## Case Study 1: Diamond Pricing Data
+
+The current training data and application are specifically for diamond valuation, not general retail product pricing.
 
 ## Data Sources
 
